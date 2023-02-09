@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#background{
+  width: 100%;
+  height: 100%;
+  /* background-color: #f1f1f1; */
+  background-image: url('/images/bg.jpg');
+  background-position: center ;
+  /* background-position-y: 20px; */
+  /* background-size: 130%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.65);
+}
+nav{
+  width: 100%;
+  height: 15vh;
+  margin: 0 auto;
+  background-color:rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+#logo{
+color: white;
+font-weight: 600;
+border: 10px solid;
+border-image-slice: 1;
+border-width: 5px;
+padding: 10px 15px;
+border-image-source: linear-gradient(to left, #c832db, #ec3a3a);
+font-size: 28px;
+font-family: 'Montserrat', sans-serif;
+
+}
+#links{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+#content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+
+#content h3{
+  font-weight: 400;
+  font-size: 45px;
+}
+.link{
+  cursor: pointer;
+  /* border: 1px solid white; */
+  /* padding: 0 30px;  */
+}
+.link:hover{
+  color: #971d42;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: 0.3s ease-in;
+}
+a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+
+}
+
+@media (max-width:768px){
+  #links{
+    display: none;
+  }
+  #hemberger{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+
+  }
+  #navpage{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index:99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
+  }
+  #mobilelinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  #mobilelinks a{
+    display: inline-block;
+    margin: 30px 0;
+  }
+  #close{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    cursor: pointer;
+  }
+  h1{
+    font-size: 100px;
+  }
+}
+@media (min-width:768px){
+  #hemberger{
+    color: white;
+    display: none;
+  }
+  #navpage{
+    display: none;
+  }
+  #content h1{
+    font-size: 170px;
+    font-weight: 600;
+  }
+}
+

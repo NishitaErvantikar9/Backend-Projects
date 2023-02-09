@@ -1,0 +1,22 @@
+#card img{
+  margin: auto;
+  width: 150px;
+}
+#card{
+    text-align: center;
+    padding: 40px;
+}
+a{
+    display: inline-block;
+    background-color: #2586EB;
+    color: #fff;
+    border: none;
+    outline-color: royalblue;
+     padding: 8px 22px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#card p{
+   margin:20px 0;
+   width: 100%;
+  }

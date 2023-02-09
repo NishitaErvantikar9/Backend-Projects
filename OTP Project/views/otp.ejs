@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+ <div id="bg">
+     <div id="top">
+      <nav>
+        <div class="logo">
+          <img src="https://www.thefashionstation.in/wp-content/uploads/2019/07/bookmyshow-1-1600x757.png" width="150px" alt="">
+        </div>
+        <div class="links">
+          <a href="">Home</a>
+          <a href="">Movies</a>
+          <a href="">FAQ</a>
+        </div>
+      </nav>
+      <h1>Discover Movies Around You</h1>
+      <p>We have sent you a verification code to your number</p>
+      <p>Please enter the code here</p>
+      <form method="post" action="/step3">
+        <input type="hidden" name="id" value="<%= id %>">
+        <input type="text" name="token">
+        <input type="submit" value="Check Code">
+    </form>
+     </div>
+     <div id="bottom">
+       <div class="card">
+         <h4>Oct <br> 02</h4>
+         <div class="cardImg"></div>
+         <div class="letter"><span>Fast and Furious</span><button>Book Now</button></div>
+       </div>
+       <div class="card">
+         <h4>Aug<br>09</h4>
+         <div class="cardImg"></div>
+         <div class="letter"><span>Fast and Furious</span><button>Book Now</button></div>
+       </div>
+     </div>
+ </div>
+</body>
+</html>

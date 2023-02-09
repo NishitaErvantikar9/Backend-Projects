@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.angleddiv{
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.514);
+  position: absolute;
+  left: -12%;
+  transform: skew(20deg);
+}
+#content{
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0,-50%);
+  color: white;
+  padding: 2%;
+}
+#content h1{
+  font-size: 40px;
+  font-weight: 600;
+  padding-right:  0;
+}
+h1 span{
+  color: #FDD94A;
+}
+.buttons button{
+  /* padding: 10px 20px; */
+  /* background-color: #e55039; */
+  width: 180px;
+  height: 45px;
+  border-radius: 30px;
+  margin-right: 2rem;
+  color: white;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+
+
+}
+#write{
+  background-color:#7526A3; 
+}
+#read{
+  background-color: transparent;
+  /* box-sizing: content-box; */
+  border: 2px white solid;
+}
+.bg nav{
+  
+  /* background-color: blue; */
+  position: absolute;
+  top: 0;
+  right: 4%;
+  z-index: 10;
+  height: 10%;
+  display: flex;
+  font-weight: 500;
+ 
+  align-items: center;
+}
+nav a{
+  margin: 0 1.5rem;
+}
+nav a:hover{
+  color: tomato;
+}

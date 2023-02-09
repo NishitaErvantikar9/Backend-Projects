@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../stylesheets/read.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/post">Post</a>
+        <a href="/reviews">Reviews</a>
+      </nav>
+      <div id="top">
+        <div id="overlay"></div>
+      </div>
+      <div id="container">
+        <h2>Recent Reviews</h2>
+        <br />
+        <% data.forEach(function(game){ %>
+            <div class="card">
+                <h3><%= game.gamename %></h3>
+                <br />
+                <p>
+                 <%= game.review %>
+                </p>
+                <br />
+                <a href="/update/<%= game._id %>"> <button id="update">Update</button></a>
+                <a href="/delete/<%= game._id %>"> <button id="delete">Delete</button></a>
+              </div>
+         <% }) %>
+        
+      </div>
+    </div>
+  </body>
+</html>

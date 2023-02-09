@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="stylesheet" href="/stylesheets/about.css">
+  <link rel="stylesheet" href="/stylesheets/gallery.css">
+  <link rel="stylesheet" href="/stylesheets/contact.css">
+
+
+
+  <title>Rated R</title>
+</head>
+<body>
+  <div id="navpage">
+    <div id="close"><i class="ri-close-line"></i></div>
+    <div id="mobilelinks">
+      <a class="link" href="/">HOME</a>
+      <a class="link" href="/about">ABOUT</a>
+      <a class="link" href="/events">GALLERY</a>
+      <a class="link" href="/contact">CONTACT</a>
+    </div>
+  </div>
+  <div id="header">
+    <div id="overlay">
+      <nav>
+      <div id="logo">RATED R</div>
+      <span id="hemberger"><i class="ri-menu-2-line"></i></span>
+      <div id="links">
+        <a class="link" href="/">HOME</a>
+        <a class="link" href="/about">ABOUT</a>
+        <a class="link" href="/events">GALLERY</a>
+        <a class="link" href="/contact">CONTACT</a>
+        
+      </div>
+    </nav>
+    
+   <div id="contact">
+       <div id="contactOverlay">
+           <div id="form">
+               <h3>RESERVATION</h3>
+               <br>
+               <small>BOOK YOUR TICKET</small>
+               <form action="/submit" method="POST">
+                   <input type="text" placeholder="NAME" name="name" required>
+                   <input type="email" placeholder="EMAIL" name="email" required>
+                   <input type="text" placeholder="NUMBER OF PEOPLE" name="number" required>
+                   <input type="checkbox" required><small>I agree that my submitted data is being collected and stored.</small> 
+                   <input type="submit" value="BOOK">  
+               </form>
+           </div>
+       </div>
+   </div>
+
+   <script src="/javascripts/script.js"></script>
+
+</body>
+</html>

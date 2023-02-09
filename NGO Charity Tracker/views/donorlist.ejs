@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participants</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="bg">
+    <h1>DONOR LIST</h1>
+    <aside>
+      <a href="/adduser">
+        <button id="add"> Add New Entry </button>
+      </a>
+      <a href="/leaderboard">
+        <button id="board"> Leaderboard </button>
+      </a>
+    </aside>
+  
+     
+      
+    <div id="container">
+   
+    <% contestant.forEach(function(a){ %>
+      <div class="card">
+        <div class="cardImg">
+          <img src="<%= a.prfl %>" alt="img">
+        </div>
+        <h4><%= a.name %></h4>
+        <div class="point">
+          <span>Amount</span>
+          <span class="score"><%= a.amount %></span>
+        </div>
+      
+        <div class="btns">
+          <a href="/update/<%= a._id %>"> <button id="update">Update</button></a>
+          <a href="/delete/<%= a._id %>"> <button id="delete">Delete</button></a>   
+        </div>
+      </div>
+     <% }) %>
+  </div>
+  </div>
+</body>
+</html>

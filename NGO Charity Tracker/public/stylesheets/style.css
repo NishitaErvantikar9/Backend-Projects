@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#bg{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #fafafa;
+  padding-top: 20px;
+}
+
+#container{
+ justify-content: center;
+  min-height: 80vh;
+ margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 200px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin: 10px 20px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card h4{
+  text-align: center;
+  margin-top: 15px;
+}
+.cardImg{
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.cardImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.point{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button{
+border: none;
+padding: 7px 10px;
+margin-top: 15px;
+color: white;
+border-radius: 5px;
+font-size: 12px;
+}
+
+.score{
+  font-weight: 700;
+}
+
+#update{
+  background-color: #6ab04c;
+}
+
+#delete{
+  background-color: #eb4d4b;
+}
+#add{
+  background-color: #0fbcf9;
+
+}
+aside button{
+
+  border: none;
+padding: 10px 15px;
+margin-top: 15px;
+color: white;
+border-radius: 5px;
+font-size: 13px;
+margin-left: 20px;
+font-weight: 800;
+}
+aside{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+#board{
+  background-color: #92358a;
+}

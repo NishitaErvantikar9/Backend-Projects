@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <div class="bg">
+      <div id="form">
+        <h2>Upload Your Picture</h2>
+        <h6>File should be in PNG or JPG Format</h6>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+          <div id="container">
+            <label for="file">
+              <img id="img" src="/images/folder.png" alt="" />
+            </label>
+            <small>Upload Your Pic Here</small>
+          </div>
+
+          <input type="file" name="avatar" id="file" />
+          <br />
+          <input type="text" name="name" placeholder="Photo Title" />
+          <br />
+          <input type="submit" value="Save" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

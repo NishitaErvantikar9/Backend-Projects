@@ -1,0 +1,86 @@
+#header{
+    width: 100%;
+    height: 15vh;
+}
+#contact{
+    height: 85vh;
+    width: 100%;
+    background-image: url('/images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* background-image: linear-gradient(to bottom,transparent,black); */
+}
+
+#contactOverlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,#020405,#010102f6,#030405ea,#050708f8,#070a0cd0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    margin-top: 50px;
+    width: 420px;
+    height: 500px;
+    /* border: solid white 1px; */
+    /* background-color: yellow; */
+    text-align: center;
+   color: white;
+   font-family: 'montserrat';
+   
+}
+#form form{
+    text-align: left;
+    margin-top: 40px;
+}
+#form h2{
+    font-weight: 600;
+}
+
+input[type="text"],[type="email"],[type="number"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px grey;
+    outline: none;
+    color: white;
+    margin: 20px 0;
+
+}
+input[type="submit"]{
+    height: 50px;
+    width: 100%;
+  background-color: transparent;
+  border: solid 1px;
+  border-image-slice: 8;
+border-width: 3px;
+color: white;
+margin: 30px 0;
+
+letter-spacing: 4px;
+
+border-image-source: linear-gradient(to left, #c832db, #ec3a3a);
+}
+small{
+    color: grey;
+    margin-left: 15px;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 14px;
+}
+
+input[type="submit"]:hover{
+border-image-source: linear-gradient(to right, #c832db, #ec3a3a);
+font-weight: 500;
+cursor: pointer;
+}
+.end{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }

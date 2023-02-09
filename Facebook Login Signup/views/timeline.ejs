@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<style>
+    
+.postTop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    /* background-color: red; */
+}
+
+.postDetails{
+    margin-left: 10px;
+}
+
+.postDetails h6{
+    margin-bottom: 0px;
+    color: rgb(75, 75, 75);
+}
+
+.post > p{
+    /* padding: 0 20px; */
+    font-size: 13px;
+    margin-top: 10px;
+}
+.post{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px 10px 30px 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.062), 0 3px 6px rgba(0, 0, 0, 0.123);
+}
+
+.prevPost h4{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: rgb(116, 116, 116);
+}
+textarea{
+    resize: none;
+}
+</style>
+<div class="flex container mt-5 pt-4 pb-4">
+    <div id="left">
+        <div class="profilePicFrame">
+            <div id="profilePic">
+                <img class="prflpic">
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Send Message Anonymously</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details p-2 pl-3 pr-3">
+            <h4><%= foundUser.name %></h4>
+            <h6 class="lead"><%= foundUser.email %></h6>
+          
+         
+                <a class="mt-4 btn btn-sm btn-primary" href="/profile">Back To Profile</a>
+                <form class="mt-4" action="/post" method="POST">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">What's your current thought ?</label>
+                        <textarea class="form-control" name="post" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Write your thought here..."></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Post It">
+                </form>
+          
+
+            <hr>
+            <div class="prevPost mt-4">
+                <h4>Previous Posts</h4>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facilis atque exercitationem
+                    magni?</small>
+                <div id="posts" class="posts mt-4">
+                    <% foundUser.posts.reverse().forEach(function(post){ %>
+                    <div class="post">
+                        <div class="postTop">
+                            <div class="postDetails">
+                                <h6><%= foundUser.name %></h6>
+                            
+                            </div>
+                        </div>
+                        <p><%= post.postText %></p>
+                      
+                        <div class="options">
+                            
+                        </div>
+                    </div>
+                    <% }) %>
+                
+                    <p class="text-center"><small>No More Posts Left</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: "Product Sans"; */
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+#back{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,#FC466B,#3F5EFB);
+  background-color: #f8f8f8;
+  text-align: center;
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  /* height: 350px; */
+  background-color: #fff;
+  box-shadow: 0 10px 40px -20px rgba(0,0,0,0.2);
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.0px );
+-webkit-backdrop-filter: blur( 10.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#card img{
+  width: 40px;
+}
+
+#card h2{
+  font-size: 20px;
+  margin-top: 10px;
+  /* opacity: .7; */
+  color: white;
+}
+
+form{
+  margin-top: 20px;
+}
+
+input{
+  width: 100%;
+  display: block;
+  border: 1.5px solid #ececec;
+  outline-color: royalblue;
+  padding: 16px 22px;
+  margin: 30px 0;
+  border-radius: 7px;
+}
+
+#card p{
+  opacity: .5;
+  font-size: 12px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+input[type="submit"]{
+  /* background-color: #2586EB; */
+  background: linear-gradient(to right,#FC466B,#3F5EFB);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+}
+a{
+  color: rgb(42, 99, 204);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 1rem;
+}

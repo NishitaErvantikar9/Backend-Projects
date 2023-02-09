@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leaderboard</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/leaderboard.css" />
+  </head>
+  <body>
+    <section class="main-content">
+      <div class="container">
+        <h3 style="text-align: center;font-weight: 600;">Top Donors</h3>
+        <h6 style="text-align: center; font-weight: 500;">Happy To Help</h6>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th style="text-align: center">Name</th>
+              <th>Donation Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+              <% data.forEach(function(a,i){ %>
+                <tr>
+                    <td>
+                      <div class="d-flex align-items-baseline justify-content-center" ">
+                        <h6 style="text-align: center; font-weight: 600;" class="mr-2"><%= i+1 %></h6>
+                      </div>
+                    </td>
+      
+                    <td>
+                      <div class="d-flex align-items-center" style=" margin-left: -20px;">
+                        <img
+                          src="<%= a.prfl %>"
+                          class="circle-img circle-img--small mr-3"
+                          alt="User Img"
+                        />
+                        <div class="user-info__basic">
+                          <h6 style="font-size: 13px;" class="mb-0"><%= a.name %></h6>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-baseline justify-content-center" style="text-align: center;  text-align: center;">
+                        <h4 style="color: rgb(12, 78, 78); font-size: 15px; font-weight: 600;" class="mr-1"><%= a.amount %></h4>
+        
+                      </div>
+                    </td>
+                  </tr>
+           <%   }) %>
+          
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

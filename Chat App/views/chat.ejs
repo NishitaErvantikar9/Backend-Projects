@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+    integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script> -->
+<style>
+    .chatsurface {
+        width: 100%;
+        min-height: 70vh;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: #f3f3f3;
+    }
+
+    .msgfield {
+        width: 100%;
+        height: 50vh;
+        overflow-y: auto;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: #ebebeb;
+        padding: 10px;
+    }
+
+    .chatsurface textarea {
+        width: 100%;
+        height: 70px;
+        resize: none;
+        outline: none;
+        padding: 5px;
+        border: none;
+    }
+
+    .msg {
+        width: 70%;
+        min-height: 40px;
+        background-color: #fff;
+        padding: 10px 10px 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .usr {
+        display: none;
+    }
+</style>
+
+<div class="container">
+    <h3 class="mt-5 mb-4" style="text-align: center;">Chatter Box</h3>
+    <div class="chatsurface">
+        <div class="msgfield">
+            
+        </div>
+        <textarea name="msgtext" id="msg"></textarea>
+        <button id="btn" class="btn btn-block btn-primary mt-3" href="">send message</button>
+        <div class="usr"><%= name %></div>
+
+    </div>
+</div>
+
+<script>
+    var clientIo = io();
+    var btn = document.querySelector('#btn');
+    var usr = document.querySelector('.usr');
+    var textarea = document.querySelector('textarea');
+    var msgfield = document.querySelector('.msgfield');
+
+    btn.addEventListener('click', function(){
+        clientIo.emit('new msg', {sender: usr.textContent, msg: textarea.value});
+        textarea.value = '';
+    })
+
+    clientIo.on('msg', function(message){
+        msgfield.innerHTML += `<div class="msg"><span class="text-primary">${message.sender}</span> : ${message.msg}</div>`;
+        msgfield.scrollTop = msgfield.scrollHeight;
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+#card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  /* height: 350px; */
+  background-color: #fff;
+  box-shadow: 0 10px 40px -20px rgba(0,0,0,0.2);
+}
+
+#card img{
+  width: 40px;
+}
+
+#card h2{
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: .7;
+}
+
+form{
+  margin-top: 20px;
+}
+
+input{
+  width: 100%;
+  display: block;
+  border: 1.5px solid #ececec;
+  outline-color: royalblue;
+  padding: 8px 22px;
+  margin-top: 10px;
+}
+
+#card p{
+  opacity: .5;
+  font-size: 12px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+input[type="submit"]{
+  background-color: #2586EB;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+a{
+  color: rgb(42, 99, 204);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 1rem;
+}
