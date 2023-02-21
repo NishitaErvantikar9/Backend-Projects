@@ -6,7 +6,7 @@
 
 <table width="100%>
   <tr>
-    <td width="50%">### Music Concert Booking</td>
+    <td width="50%"><img src="https://github.com/NishitaErvantikar9/NishitaErvantikar9/blob/main/Images-Readme/How%20to%20use.gif" height="200px" width="300px" style="padding:40px;"> </td>
     <td width="50%"><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" style="padding:40px;"></td>
    
   </tr>
