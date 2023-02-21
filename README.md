@@ -7,7 +7,7 @@
 <table width="100%>
   <tr>
     <td width="50%">### Music Concert Booking</td>
-    <td width="50%"><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" style="paddinng:10px;"></td>
+    <td width="50%"><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" style="padding:40px;"></td>
    
   </tr>
   <tr>
