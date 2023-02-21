@@ -7,7 +7,7 @@
 <table width="100%>
   <tr>
     <td width="50%">### Music Concert Booking</td>
-    <td width="50%"><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px"></td>
+    <td width="50%"><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" style="paddinng:10px;"></td>
    
   </tr>
   <tr>
@@ -16,6 +16,6 @@
     
   </tr>
 </table>
-[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" >](https://github.com/NishitaErvantikar9/Backend-Projects/tree/main/MERN/DC%20Comics)
+
 
 ## .NET Stack
