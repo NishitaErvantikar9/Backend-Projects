@@ -7,7 +7,7 @@
 
 
 ## Chat App
-<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" height="500px"  width="50%" align="right" >
+<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" height="500px"  width="40%" align="right" >
 
 
 ## .NET Stack
