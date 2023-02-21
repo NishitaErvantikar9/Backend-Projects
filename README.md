@@ -5,6 +5,8 @@
 
 ## Music Concert Booking
 <img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" height="500px"  width="40%" align="left" >
+This app uses a npm module called Nodemailer that send you mail upon booking tickets on this website.
+Stack used: Html, CSS , Javascript, Bootstrap, nodejs, Expressjs
 
 ## Chat App
 <img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" height="500px"  width="40%" align="right" >
