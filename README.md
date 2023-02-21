@@ -6,8 +6,8 @@
 
 <table width="100%>
   <tr>
-    <td>### Music Concert Booking</td>
-    <td>[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" >](https://github.com/NishitaErvantikar9/Backend-Projects/tree/main/MERN/DC%20Comics)</td>
+    <td>Music Concert Booking</td>
+    <td><img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" height="200px" width="300px" >](https://github.com/NishitaErvantikar9/Backend-Projects/tree/main/MERN/DC%20Comics)</td>
    
   </tr>
   <tr>
