@@ -10,7 +10,7 @@ Nodemailer to send mails upon successul post rote implementation is the main her
 
 
 ## Weather App
-<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Weather.gif" width="60%" align="center" >
+<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Weather.gif"  >
 
 
 ## .NET Stack
