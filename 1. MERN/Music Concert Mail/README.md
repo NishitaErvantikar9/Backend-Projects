@@ -6,8 +6,8 @@
 
 2. Go to that path in your vs code terminal or CMD to make the backend enviroment ready.
 
-> npm i express-generator 
+      npm i express-generator 
 
-> express --ejs [name of the project]
+      express --ejs [name of the project]
 5. 
 6. 
