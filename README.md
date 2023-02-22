@@ -11,6 +11,6 @@ Nodemailer to send mails upon successul post rote implementation is the main her
 
 ## Weather App
 <img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Weather.gif"  >
-
+This app integrates with Weather API to request the temperature and other weather details by city name.
 
 ## Facebook Login
