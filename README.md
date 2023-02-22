@@ -9,8 +9,8 @@
 <br>
 
 
-## Chat App
-<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Animation.gif" >
+## Weather App
+<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Weather.gif" >
 
 
 ## .NET Stack
