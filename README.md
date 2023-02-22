@@ -9,7 +9,7 @@
 <br>
 
 
-## Chat App
+## Weather App
 <img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Images/Weather.gif" >
 
 
