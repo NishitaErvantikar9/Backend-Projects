@@ -5,7 +5,7 @@
 
 ## Music Concert Booking
 <img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Animation.gif" width="60%" align="left" >
-
+Nodemailer to send mails upon successul post rote implementation is the main hero of this project.
 <br>
 
 
