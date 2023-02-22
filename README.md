@@ -10,7 +10,7 @@
 
 
 ## Weather App
-<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Weather.gif" >
+<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Weather.gif" width="60%" align="left" >
 
 
 ## .NET Stack
