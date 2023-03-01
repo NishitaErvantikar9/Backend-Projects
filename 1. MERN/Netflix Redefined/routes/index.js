@@ -26,7 +26,7 @@ fs.appendFile('data.txt',`email: ${email}`, function(e){
     console.log(e)
   }
   else{
-    res.send('Subscribed! Go to Home Page')
+    res.render("index")
   }
 })
 })
