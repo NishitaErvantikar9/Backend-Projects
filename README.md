@@ -14,3 +14,19 @@ Nodemailer to send mails upon successul post rote implementation is the main her
 This app integrates with Weather API to request the temperature and other weather details by city name.
 
 ## Facebook Login
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/facebooklogin.gif"  >]()
+
+## Taskapp
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/taskapp.gif"  >]()
+
+## netflix redefined
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/netflixredefined.gif"  >]()
+
+## chat app
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/chatapp.gif"  >]()
+
+## Donation dashboard
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Donationdashboard.gif"  >]()
+
+## Gaming reviews
+[<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/gamingreviews.gif"  >]()
