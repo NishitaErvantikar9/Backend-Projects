@@ -15,18 +15,23 @@ This app integrates with Weather API to request the temperature and other weathe
 
 ## Facebook Login
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/facebooklogin.gif"  >]()
+THis project was to learn authentication using passport.js and session variables. Axios module is used.
 
 ## Taskapp
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/taskapp.gif"  >]()
+Applying basic crud operations with mongodb database and mongoose library.
 
 ## netflix redefined
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/netflixredefined.gif"  >]()
+This was when i was learning how to perform get routes on different views.
 
 ## chat app
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/chatapp.gif"  >]()
 
 ## Donation dashboard
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/Donationdashboard.gif"  >]()
+Using multer module for adding profile pictures and basic CRUD operational taks using ,mongodb are the objectives of the project.
 
 ## Gaming reviews
 [<img src="https://github.com/NishitaErvantikar9/Backend-Projects/blob/main/Media/gamingreviews.gif"  >]()
+pplying basic crud operations with mongodb database and mongoose library.
